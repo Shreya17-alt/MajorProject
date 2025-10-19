@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wellness Newsletter — Demo</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+      <nav class="header">
+  <ul class="links">
+    <img src="logo-black.png">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+  <div class="wrap">
+    <div class="bg-shape" aria-hidden="true"></div>
+
+    <div class="card-area">
+      <div class="form-panel" role="region" aria-label="Newsletter Signup">
+        <div class="kicker">NEWSLETTER</div>
+        <h1>Join our Wellness Community</h1>
+        <p class="lead">Stay up-to-date with the latest in health and well‑being</p>
+
+        <form id="signup" novalidate>
+          <label for="title">Title*</label>
+          <div class="single">
+            <select id="title" name="title" aria-label="Title">
+              <option>Mr</option>
+              <option>Mrs</option>
+              <option>Ms</option>
+              <option>Dr</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="fname" class="sr">First Name</label>
+              <input id="fname" name="fname" type="text" placeholder="Enter your First Name">
+            </div>
+            <div class="field">
+              <label for="lname" class="sr">Last Name</label>
+              <input id="lname" name="lname" type="text" placeholder="Enter your Last Name">
+            </div>
+          </div>
+
+          <div class="single">
+            <label for="email" class="sr">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter a valid email address">
+          </div>
+
+          <button class="btn" type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div class="image-panel" aria-hidden="true">
+        <div class="image-wrap">
+          <!-- Use the uploaded image path below -->
+          <img src="contact.img.png" alt="People stretching on mats">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Small demo behavior to prevent real submission
+    const form = document.getElementById('signup');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thanks — demo submission captured (no network).');
+    });
+  </script>
+</body>
+</html>
