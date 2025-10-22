@@ -214,6 +214,7 @@ body {
   width: 550px;
   height: auto;
   object-fit: contain;
+   margin-bottom: -5px;
 }
 .content-section {
   flex: 1;
