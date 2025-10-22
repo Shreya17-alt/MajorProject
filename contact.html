@@ -7,71 +7,102 @@
   <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-      <nav class="header">
-  <ul class="links">
-    <img src="logo-black.png">
-    <li><a href="index.html">Home</a></li>
+<header class="navbar">
+  <div class="logo">
+    <img src="https://assets.nicepagecdn.com/d2cc3eaa/6551490/images/logo-black.png" alt="Wellness Center Logo">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="faq.html">FAQ</a></li>
   </ul>
-</nav>
-  <div class="wrap">
-    <div class="bg-shape" aria-hidden="true"></div>
+</header>
+  <section class="hero">
+    <h1>Contact Us</h1>
+  </section>
 
-    <div class="card-area">
-      <div class="form-panel" role="region" aria-label="Newsletter Signup">
-        <div class="kicker">NEWSLETTER</div>
-        <h1>Join our Wellness Community</h1>
-        <p class="lead">Stay up-to-date with the latest in health and well‑being</p>
+  
+  <section class="newsletter">
+    <div class="newsletter__card">
+      <p class="tag">NEWSLETTER</p>
+      <h2>Join our Wellness Community</h2>
+      <p class="desc">Stay up-to-date with the latest in health and well-being</p>
 
-        <form id="signup" novalidate>
-          <label for="title">Title*</label>
-          <div class="single">
-            <select id="title" name="title" aria-label="Title">
-              <option>Mr</option>
-              <option>Mrs</option>
-              <option>Ms</option>
-              <option>Dr</option>
-            </select>
-          </div>
+      <form onsubmit="event.preventDefault(); alert('Form submitted!')">
+        <label>Title</label>
+        <select required>
+          <option>Mr</option>
+          <option>Ms</option>
+          <option>Mrs</option>
+          <option>Dr</option>
+        </select>
 
-          <div class="row">
-            <div class="field">
-              <label for="fname" class="sr">First Name</label>
-              <input id="fname" name="fname" type="text" placeholder="Enter your First Name">
-            </div>
-            <div class="field">
-              <label for="lname" class="sr">Last Name</label>
-              <input id="lname" name="lname" type="text" placeholder="Enter your Last Name">
-            </div>
-          </div>
-
-          <div class="single">
-            <label for="email" class="sr">Email</label>
-            <input id="email" name="email" type="email" placeholder="Enter a valid email address">
-          </div>
-
-          <button class="btn" type="submit">SUBMIT</button>
-        </form>
-      </div>
-
-      <div class="image-panel" aria-hidden="true">
-        <div class="image-wrap">
-          <!-- Use the uploaded image path below -->
-          <img src="contact.img.png" alt="People stretching on mats">
+        <div class="name-row">
+          <input type="text" placeholder="Enter your First Name" required>
+          <input type="text" placeholder="Enter your Last Name" required>
         </div>
+
+        <input type="email" placeholder="Enter a valid email address" required>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="newsletter__image">
+      <img src="https://assets.nicepagecdn.com/d2cc3eaa/6551490/images/friends-doing-yoga-together-park_23-2149891878.jpg" alt="Wellness Community">
+    </div>
+
+  </section>
+
+  <div class="footer">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <img src="logo-white-1.png" alt="Wellness Center Logo" class="footer-logo" />
+        <p class="mission-text">
+          Our mission is to support health, healing<br>
+          and mindful living for every stage of life.
+        </p>
       </div>
+
+      <div class="footer-center">
+        <a href="#">FAQs</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+        <a href="#">News & Blog</a>
+
+        <div class="social-icons">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+
+      </div>
+
+
+      <div class="footer-right">
+        <p>📍 14 E 12th St, New York,<br> NY 10007, United States</p>
+        <p>📧 hi@company.com</p>
+        <p>📞 +1 (234) 567-8910</p>
+      </div>
+
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-bottom">
+      <div class="bottom-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Our Team</a>
+        <a href="#">Contact</a>
+      </div>
+        <p class="copyright">Nicepage © 2025. All Rights Reserved.</p>
     </div>
   </div>
 
-  <script>
-    // Small demo behavior to prevent real submission
-    const form = document.getElementById('signup');
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      alert('Thanks — demo submission captured (no network).');
-    });
-  </script>
+
 </body>
 </html>
