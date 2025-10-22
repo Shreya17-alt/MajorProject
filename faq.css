@@ -8,6 +8,62 @@ body {
   background-color: white; 
   padding: 40px 20px;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 90px;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #0078d7;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between; 
@@ -17,9 +73,6 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   top: 0;
   z-index: 1000;
-  width: 100vw;
-  left: 0;
-  margin: 0;
 }
 .header img {
   height: 60px;
@@ -45,6 +98,7 @@ body {
 .faq-wrapper {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .first-faq {

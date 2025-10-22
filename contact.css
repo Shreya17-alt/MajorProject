@@ -10,8 +10,6 @@ body {
     color: #111;
     background: #fff;
 }
-
-/* Layout */
 .wrap {
     min-height: 100vh;
     display: flex;
